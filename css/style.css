@@ -1,0 +1,365 @@
+/* ================================= 
+                GLOBAL
+==================================== */
+
+* {
+    box-sizing: border-box;
+ 
+}
+
+.stop-transition {
+    transition: none;
+}
+
+body {
+    font-family: "Karla", serif;
+}
+
+a {
+    text-decoration: none;
+    color: #141c3a;
+}
+
+ul {
+     padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+.header-subtitle-big,
+.header-subtitle-small {
+    margin: 0;
+}
+
+
+
+/*––––––––––––––––––––HEADER––––––––––––––––––––*/
+.filipfarag {
+    font-family: "ReenieBeanie", serif;
+    font-size: 4rem;
+    color: #B1B1B1;
+}
+
+h1 {
+    font-family: "Rubik Bold", serif;
+    letter-spacing: -1px;
+    color: #141c3a;
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+
+.header-subtitle-big {
+    font-family: "Rubik Light", serif;
+    color: #505050;
+    font-size: 1.5rem;
+}
+
+header {
+    height: 700px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filip-images {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 180px;
+    margin-top: 50px;
+}
+
+header img[alt*="messing"] {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+/*––––––––––––––––––––MAIN - *section*––––––––––––––––––––*/
+.projects {
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 100px 25px;
+}
+
+
+h2 {
+    font-family: "Rubik Bold", serif;
+    letter-spacing: -1px;
+    color: #141c3a;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.header-subtitle-small {
+    font-family: "Rubik Light", serif;
+    color: rgba(10, 10, 10, 0.9);
+    margin-bottom: 5px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-options {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    padding: 12px 0 19px;
+    text-transform: uppercase;
+    font-family: "Rubik", serif;
+    position: relative;
+}
+
+.project-options a {
+    background-color: #B1B1B1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: .8rem;
+    transition: .3s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.project-options a:hover {
+    background-color: #404040;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.view-icon {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    left: 13px;
+    bottom: 24px;
+    transition-duration: .5s;
+}
+
+.project-options a:hover .view-icon {
+    opacity: 1;
+}
+
+.download-icon {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.1rem;
+    left: 286px;
+    bottom: 26px;
+    transition-duration: .5s;
+}
+
+.project-options a:hover .download-icon {
+    opacity: 1;
+}
+
+.project-options a:nth-child(1):hover {
+    padding-left: 40px;
+}
+
+.project-options a:nth-child(2):hover {
+    padding-right: 40px;
+}
+
+.project img[src*="project"] {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 400px;
+}
+
+h3 {
+    font-family: "Rubik", serif;
+    letter-spacing: -1px;
+    color: #141c3a;
+    font-size: 1.8rem;
+    margin-top: 40px;
+
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*––––––––––––––––––––FOOTER––––––––––––––––––––*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––SPECIALITIES––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––FLOAT CLEARFIX––––––––––––––––––*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*––––––––––––––––––––––––––––WEB FONTS––––––––––––––––––––––––––––*/
+@font-face {
+    font-family: "Rubik";
+    src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url('../fonts/Rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url('../fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rubik Black";
+    src: url('../fonts/Rubik/Rubik-Black.ttf') format('truetype');
+    font-weight: black;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url('../fonts/Karla/Karla-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Karla Bold";
+    src: url('../fonts/Karla/Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Karla Italic";
+    src: url('../fonts/Karla/Karla-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "ReenieBeanie";
+    src: url('../fonts/ReenieBeanie/ReenieBeanie-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+/*––––––––––––––––––MEDIA QUERIES––––––––––––––––––*/
+@media (max-width: 1430px) {
+    
+    .projects-list {
+        grid-template-columns: 500px 500px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    
+    .projects-list {
+        grid-template-columns: 500px;
+    }
+
+    .project {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    
+    header {
+        height: 650px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header img[alt*="messing"] {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-options a:nth-child(1):hover {
+        padding-left: 15px;
+    }
+
+    .project-options a:nth-child(2):hover {
+        padding-right: 15px;
+    }
+
+    .project-options a:hover .download-icon {
+        opacity: 0;
+    }
+
+    .project-options a:hover .view-icon {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    
+    header img {
+        width: 90px;
+    }
+
+    .projects-list {
+        grid-template-columns: 320px;
+    }
+
+    .project img[src*="project"] {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,338 @@
+/* ================================= 
+                GLOBAL
+==================================== */
+
+* {
+    box-sizing: border-box;
+ 
+}
+
+body {
+	font-family: "Dosis", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+     padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+
+
+/*––––––––––––––––––––HEADER––––––––––––––––––––*/
+
+
+
+
+
+
+/*––––––––––––––––––––MAIN - *section*––––––––––––––––––––*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    background: grey url('../img/people.jpg') no-repeat center / cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Dosis Bold", sans-serif;
+    color: #6baa27;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+.signup {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(4, 40px) 100px 30px 80px 20px;
+    grid-gap: 10px 20px;
+    justify-content: center;
+}
+
+
+form input[id*="mail"],
+form input[id*="user_name"],
+.button,
+form p,
+.checkbox,
+label {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input[type*="text"],
+input[type*="email"],
+input[type*="password"],
+select {
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    background-color: #F2F4F0;
+    border-radius: 20px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+select {
+    background-color: white;
+}
+
+.radio-options {
+    display: flex;
+}
+
+input[value*="over_13"] {
+    margin-left: 20px;
+}
+
+label[for*="kraj"],
+label[class*="age"] {
+    font-family: "Dosis Bold", sans-serif;
+    color: rgb(49, 49, 49);
+    display: inline-block;
+    margin: 20px 0 5px;
+}
+
+.signup a {
+    color: #d96048;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    background-color: #d96048;
+    border: 0;
+    width: 200px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Dosis Bold", sans-serif;
+    height: 60px;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    background-color: #ce462b;
+    transition: .3s;
+}
+
+form p {
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*––––––––––––––––––––FOOTER––––––––––––––––––––*/
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: auto;
+}
+
+.footer-text {
+    padding: 25px 0 30px;
+}
+
+footer img[src*="dodo"] {
+    width: 150px;
+    padding-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: #6baa27;
+    font-family: "Dosis Bold", sans-serif;
+}
+
+footer a:hover {
+    color: #00682d;
+    transition: .3s;
+}
+
+h3 {
+    display: inline-block;
+}
+
+footer img[src*="inveo"]{
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––SPECIALITIES––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––FLOAT CLEARFIX––––––––––––––––––*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*––––––––––––––––––––––––––––WEB FONTS––––––––––––––––––––––––––––*/
+@font-face {
+    font-family: "Dosis";
+    src: url("../fonts/dosis/Dosis-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Dosis Bold";
+    src: url("../fonts/dosis/Dosis-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Dosis Italic";
+    src: url("../fonts/dosis/Dosis-Italic.ttf");
+    font-style: italic;
+}
+
+
+/*––––––––––––––––––MEDIA QUERIES––––––––––––––––––*/
+@media (max-width: 530px) {
+    
+    .signup {
+        width: 330px;
+    }
+
+    form {
+        grid-template-columns: 140px 140px;
+    }
+
+    .radio-options {
+        flex-direction: column;
+    }
+
+    input[type*="radio"] {
+        margin-right: 5px; 
+    }
+
+    input[value*="over_13"] {
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 340px) {
+    
+    .signup {
+        width: 300px;
+    }
+
+        form {
+        grid-template-columns: 125px 125px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
