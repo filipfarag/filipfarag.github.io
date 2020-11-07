@@ -83,14 +83,25 @@ header img {
     margin-top: 50px;
 }
 
+header img[alt*="coding"] {
+    animation: middle-img 300ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
+}
+
 header img[alt*="messing"] {
     margin-left: 40px;
     margin-right: 40px;
+    animation: middle-img 500ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
+}
+
+header img[alt*="calculating"] {
+    animation: middle-img 700ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
 }
 
 
 
-/*––––––––––––––––––––MAIN - *section*––––––––––––––––––––*/
+
+
+/*––––––––––––––––––––MAIN - PROJECTS––––––––––––––––––––*/
 .projects {
     text-align: center;
     background-color: #EEEEEE;
@@ -222,6 +233,37 @@ h3 {
 /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 /*––––––––––––––––––––––––––––SPECIALITIES––––––––––––––––––––––––––––*/
 /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––KEYFRAMES––––––––––––––––––*/
+@keyframes left-img {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes middle-img {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes right-img {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /*––––––––––––––––––FLOAT CLEARFIX––––––––––––––––––*/
 .clearfix:after {
