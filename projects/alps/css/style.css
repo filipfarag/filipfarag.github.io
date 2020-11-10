@@ -1,0 +1,377 @@
+/* ================================= 
+                GLOBAL
+==================================== */
+.stop-transition {
+    transition: none;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Josefin', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+     padding: 0;
+     margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-family: 'Josefin Bold', serif;
+}
+
+:root {
+	--orange-dark: #a37126;
+    --orange-light: #cf9e53;
+    --edge-space: 50px;
+}
+
+
+/*––––––––––––––––––––HEADER––––––––––––––––––––*/
+html {
+    animation: header 2s cubic-bezier(0.6, 1.5, 0.6, 1.2);
+}
+
+header {
+    background: url('../img/header-img.jpg') no-repeat center / cover;
+    height: 700px;
+}
+
+header nav {
+    padding-top: var(--edge-space);
+    font-family: "Josefin", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: var(--edge-space);
+}
+
+header nav li {
+    margin-bottom: 13px;
+}
+
+header nav a {
+    color: var(--orange-light);
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: var(--orange-dark);
+}
+
+.header-icon {
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: .3s ease-out;
+    transform: scale(0);
+}
+
+header nav a:hover .header-icon {
+    opacity: 1;
+    right: 20px;
+    transform: scale(1);
+}
+
+nav p {
+    margin: 0;
+    margin-left: var(--edge-space);
+    font-family: "Cormorant", sans-serif;
+    color: #636363;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    animation: title 1.5s ease-in;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.952);
+    font-size: 8rem;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+h1 span {
+    font-size: calc(8rem + 15%);
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 1.7rem;
+    margin: 0;
+    letter-spacing: .55px;
+    font-family: "Cormorant", serif;
+    text-align: center;
+}
+
+.button-main {
+    color: white;
+    border-radius: 0px;
+    background-color: #808080;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Bold", sans-serif;
+    margin-top: 27px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    transition: .5s cubic-bezier(.51,.92,.24,1.15);
+}
+
+.button-main:hover {
+    background-color: var(--orange-dark);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/*––––––––––––––––––––MAIN - *section*––––––––––––––––––––*/
+.photo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: var(--edge-space);
+    margin-top: -10px;
+    color: #3b3b3b;
+    position: relative;
+}
+
+.photo-note {
+    position: absolute;
+    bottom: 90px;
+    right: 65px;
+    color: #afafaf;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.photo-note i {
+    font-size: 2rem;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: #afafaf;
+}
+
+.photo-info-nr {
+    font-family: "Cormorant Italic", serif;
+    font-size: 2.8rem;
+    background-color: rgb(219, 219, 219);
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+.photo-info-detail p {
+    margin-top: 4px;
+    text-align: right;
+}
+
+.photo-info-detail {
+    opacity: 0;
+    transition: .3s;
+}
+
+.photo-info-nr:hover ~ .photo-info-detail {
+    opacity: 1;
+}
+
+
+
+
+
+/*––––––––––––––––––––FOOTER––––––––––––––––––––*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––SPECIALITIES––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––KEYFRAMES––––––––––––––––––*/
+@keyframes header {
+    0% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes title {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*––––––––––––––––––FLOAT CLEARFIX––––––––––––––––––*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*––––––––––––––––––––––––––––WEB FONTS––––––––––––––––––––––––––––*/
+@font-face {
+    font-family: "Cormorant";
+    src: url("../fonts/cormorant/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cormorant Bold";
+    src: url("../fonts/cormorant/CormorantGaramond-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cormorant Light";
+    src: url("../fonts/cormorant/CormorantGaramond-Light.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cormorant Italic";
+    src: url("../fonts/cormorant/CormorantGaramond-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url("../fonts/josefinsans/JosefinSans.ttf");
+}
+
+@font-face {
+    font-family: "Josefin Bold";
+    src: url("../fonts/josefinsans/JosefinSans-Bold.ttf");
+    font-weight: bold;
+}
+
+/*––––––––––––––––––MEDIA QUERIES––––––––––––––––––*/
+
+@media (max-width: 750px) {
+    
+	h1 {
+		font-size: 5rem;
+	}
+
+    h1 span {
+        font-size: calc(5rem + 15%);
+    }
+
+	h2 {
+		font-size: 1.4rem;
+    }
+    
+    .button-main {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    :root {
+        --edge-space: 30px;
+    }
+
+    .header-icon {
+        display: none;
+    }
+    
+	h1 {
+		font-size: 3.8rem;
+	}
+
+    h1 span {
+        font-size: calc(3.8rem + 15%);
+    }
+
+	h2 {
+		font-size: 1.2rem;
+    }
+    
+    .button-main {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .photo-note {
+        opacity: 0;
+    }
+
+    .photo-info-detail {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
