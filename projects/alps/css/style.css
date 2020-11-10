@@ -59,7 +59,7 @@ header {
 
 header nav {
     padding-top: var(--edge-space);
-    font-family: "Josefin", sans-serif;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -70,10 +70,12 @@ header ul {
     align-items: flex-end;
     flex-direction: column;
     margin-right: var(--edge-space);
+    font-family: "Josefin Bold", sans-serif;
 }
 
 header nav li {
     margin-bottom: 13px;
+    text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.925);
 }
 
 header nav a {
