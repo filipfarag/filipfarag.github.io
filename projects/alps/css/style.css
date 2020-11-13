@@ -243,7 +243,7 @@ h2 {
     padding: 50px;
     margin: 130px 0px;
     width: calc(700px - 17%);
-    border-bottom: 3px solid var(--grey);
+    border-top: 3px solid var(--grey);
     font-size: 1.3rem;
     color: var(--grey);
 }
@@ -292,26 +292,35 @@ h3 {
     font-family: "Cormorant Italic", serif;
     font-style: italic;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--grey);
 }
 
-.spot {
+.region-title video {
+    width: 320px;
+    margin: 5px 0 15px;
+    border: solid 1px var(--grey-light);
+}
+
+.spot,
+.spot-4 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
-.spot-photo {
+.spot-photo-2,
+.spot-photo-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.spot-photo img {
+.spot-photo-2 img,
+.spot-photo-3 img {
     width: 450px;
     max-width: 90%;
 }
@@ -331,11 +340,50 @@ h4 {
     color: var(--grey-dark);
 }
 
-.spot-detail p {
+.spot-detail p,
+.spot-detail-4 p {
     font-size: 1.1rem;
     color: var(--grey);
     line-height: 1.4;
 }
+
+/*––––––––––––––––––––MAIN - BERCHTESGADEN - WATZMANN––––––––––––––––––––*/
+img[src*="berchtesgaden-3"] {
+	border: solid 2px var(--grey-light);
+}
+
+.spot-photo-3 {
+    order: 2;
+}
+
+/*––––––––––––––––––––MAIN - BERCHTESGADEN - KOENIGSSEE ––––––––––––––––––––*/
+.spot-4 {
+    flex-direction: column;
+    text-align: center;
+}
+
+.spot-photo-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spot-photo-4 video {
+    width: 200px;
+    margin: 5px 0 15px;
+    border: solid 1px var(--grey-light);
+}
+
+.spot-detail-4 {
+    max-width: 500px;
+    margin: 0px 0 0 0px;
+}
+
+
+
+
+
+
 
 
 
@@ -480,6 +528,17 @@ h4 {
         left: 23%;
         bottom: 22%;
     }
+
+    .region-title p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .spot-photo-4 video {
+        width: 120px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -520,6 +579,14 @@ h4 {
     .intro-quote {
         width: calc(400px - 17%);
     }
+
+    .intro-quote {
+        font-size: 1.1rem;
+    }
+
+    .intro-quote span {
+        font-size: calc(1.1rem + 20%);
+    }
     
     .intro-quote img {
         left: 18%;
@@ -553,13 +620,7 @@ h4 {
         bottom: 23%;
     }
 
-    .intro-quote {
-        font-size: 1.1rem;
-    }
-
-    .intro-quote span {
-        font-size: calc(1.1rem + 20%);
-    }
+    
 }
 
 
@@ -575,6 +636,10 @@ h4 {
 
     .intro-quote img {
         left: 15%;
+    }
+
+    .spot-photo-4 video {
+        width: 90px;
     }
 }
 
