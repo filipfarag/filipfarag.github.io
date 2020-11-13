@@ -290,6 +290,7 @@ h3 {
 
 .region-title p {
     font-family: "Cormorant Italic", serif;
+    font-style: italic;
     text-align: center;
     font-size: 1.6rem;
     color: var(--grey);
