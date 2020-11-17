@@ -354,9 +354,10 @@ img[src*="marmota"] {
 
 .all-regions a:hover i {
     opacity: 1;
-    transform: translateY(80px);
-    
+    transform: translateY(80px);    
 }
+
+
 
 
 
@@ -461,6 +462,38 @@ img[src*="dolomites-7"] {
 .spot-photo-3 {
     order: 2;
 }
+
+
+/*––––––––––––––––––––MAIN - BERCHTESGADEN - EISKAPELLE ––––––––––––––––––––*/
+.eiskapelle-warning {
+    background-color: rgb(248, 89, 89);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 5px 0;
+}
+
+.eiskapelle-warning p {
+    color: white;
+}
+
+.eiskapelle-warning i {
+    margin-left: 50px;
+    font-size: 1.6rem;
+}
+
+.eiskapelle-warning p:nth-child(1) {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: "Josefin Bold", sans-serif;
+}
+
+.eiskapelle-warning a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
 
 /*––––––––––––––––––––MAIN - BERCHTESGADEN - KOENIGSSEE ––––––––––––––––––––*/
 .spot-5 {
@@ -602,6 +635,16 @@ img[src*="dolomites-6"] {
         grid-template-columns: repeat(1, 220px) 200px;
         grid-template-rows: 310px 310px;
     }
+
+    .all-regions a:hover span {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .all-regions a:hover i {
+        opacity: 0;
+        transform: translateY(0px);    
+    }
 }
 
 @media (max-width: 750px) {
@@ -665,7 +708,7 @@ img[src*="dolomites-6"] {
     }
 
     .spot-detail-6 {
-        margin: 50px 0 0 30px;
+        margin: 50px 0 0 0px;
     }
 }
 
@@ -736,17 +779,46 @@ img[src*="dolomites-6"] {
     .intro-first-p {
         font-size: 1.5rem;
     }
+
+    .all-regions {
+        background: url('../img/vrstevnice.png') repeat-x top / 200px;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 218px);
+        margin: 150px 0 200px;
+        grid-gap: 15px;
+    }
+    
+    .all-regions div p {
+        width: 150px;
+        height: 218px;
+        padding-top: 120px;
+        font-size: .8rem;
+    }
+    
+    .region-berchtesgaden {
+        background: url('../img/bg-berchtesgaden.jpg') no-repeat center / 150px;
+    }
+    
+    .region-dolomites {
+        background: url('../img/bg-dolomites.jpg') no-repeat center / 150px;
+    }
+    
+    .region-dachstein {
+        background: url('../img/bg-dachstein.jpg') no-repeat center / 150px;
+    }
+    
+    .region-valais {
+        background: url('../img/bg-valais.jpg') no-repeat center / 150px;
+    }
+    
+    .region-flag {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 440px) {
 
-    .all-regions {
-        grid-template-columns: 200px;
-        grid-template-rows: repeat(4, 310px);
-    }
-
     .region-credit {
-        position: ;
         top: 95%;
     }
 
@@ -789,6 +861,10 @@ img[src*="dolomites-6"] {
     .spot-photo-4 video {
         width: 90px;
     }
+
+    .spot-photo-5 video {
+        width: 100px;
+    }   
 }
 
 
