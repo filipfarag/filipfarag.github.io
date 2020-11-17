@@ -269,7 +269,7 @@ h2 {
 
 
 
-/*––––––––––––––––––––MAIN - ALL REGIONS ––––––––––––––––––––*/
+/*––––––––––––––––––––MAIN - TOC ––––––––––––––––––––*/
 .all-regions {
     background: url('../img/vrstevnice.png') repeat-x top / 200px;
     display: grid;
@@ -311,7 +311,7 @@ h2 {
     background: url('../img/bg-valais.jpg') no-repeat center / 200px;
 }
 
-.all-regions div span {
+.region-flag {
     font-size: 3rem;
 }
 
@@ -331,6 +331,31 @@ img[src*="marmota"] {
     position: relative;
     top: 8px;
     left: 10px;
+}
+
+.all-regions span {
+    transition: .2s ease-in;
+    display: inline-block;
+}
+
+.all-regions a:hover span {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.all-regions i {
+    position: absolute;
+    color: #e2e9f7;
+    font-size: 3rem;
+    bottom: 250px;
+    opacity: 0;
+    transition: .5s cubic-bezier(.42,.97,.52,1.49);
+}
+
+.all-regions a:hover i {
+    opacity: 1;
+    transform: translateY(80px);
+    
 }
 
 
