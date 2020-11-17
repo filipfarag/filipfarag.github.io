@@ -543,6 +543,53 @@ img[src*="dolomites-6"] {
 
 
 
+
+/*––––––––––––––––––––MAIN - ALPINE KINGS ––––––––––––––––––––*/
+
+.alpine-kings {
+    background-color: var(--grey-light);
+    color: var(--grey);
+    font-size: 1.3rem;
+    padding: 100px 0;
+}
+
+.alpine-kings div {
+    width: 730px;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.alpine-kings h3 {
+    display: inline-block;
+    border: none;
+}
+
+.alpine-kings table {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+
+}
+
+.alpine-kings thead {
+    color: var(--grey-dark);
+    font-family: "Josefin Bold", sans-serif;
+    font-size: 1.5rem;
+}
+
+.alpine-kings tr {
+    border-bottom: 2px solid var(--orange-light);
+}
+
+.alpine-kings th,
+.alpine-kings td {
+    padding: 20px
+}
+
+
 /*––––––––––––––––––––FOOTER––––––––––––––––––––*/
 
 
