@@ -358,6 +358,90 @@
 					</tbody>
 				</table>
 			</section>
+
+			<section class="find-mountain">
+				<div>
+					<p><i class="fas fa-mountain"></i></p>
+					<h3>Find a Mountain</h3>
+					<p>Search for mountains to climb based your preferences.</p>
+				</div>
+
+				<form action="index.html" method="post">
+					<div class="form-wrap">						
+						<div>
+							<label class="input-title">Country</label>
+							<div>
+								<select id="country" name="country">
+									<option value="austria">Austria</option>
+									<option value="france">France</option>
+									<option value="germany">Germany</option>
+									<option value="italy">Italy</option>
+									<option value="liechtenstein">Liechtenstein</option>
+									<option value="switzerland">Switzerland</option>
+									<option value="slovenia">Slovenia</option>
+								</select>
+							</div>
+						</div>
+
+						<div>
+							<label class="input-title">Mountain Group</label>
+							<div>
+								<select id="mountain-group" name="mountain-group">
+									<option value="albula">Albula Alps</option>
+									<option value="allgaeu">Allgäu Alps</option>
+									<option value="berchtesgaden">Berchtesgaden Alps</option>
+									<option value="bernina">Bernina Group</option>
+									<option value="chiemgau">Chiemgau Alps</option>
+									<option value="dolomites">Dolomites</option>
+									<option value="glockner">Glockner Group</option>
+									<option value="oetztal">Ötztal Alps</option>
+									<option value="schladming">Schladming Tauern</option>
+									<option value="stubai">Stubai Alps</option>
+									<option value="tux">Tux Alps</option>
+									<option value="venediger">Venediger Group</option>
+									<option value="vienna">Vienna Woods</option>
+									<option value="zillertal">Zillertal Alps</option>
+								</select>
+							</div>
+						</div>
+
+						<div>
+							<label class="input-title">Difficulty (DAV grading)</label>
+							<div>
+								<input type="radio" id="blue" value="blue" name="difficulty">
+								<label class="radio-label" for="blue">Blue</label>
+
+								<input type="radio" id="red" value="red" name="difficulty">
+								<label class="radio-label" for="red">Red</label>
+
+								<input type="radio" id="black" value="black" name="difficulty">
+								<label for="black">Black</label>
+							</div>
+						</div>
+
+						<div>
+							<label class="input-title">Hike Specifics</label>
+							<div>
+								<input class="checkbox-label" type="checkbox" id="scenic" value="scenic" name="additional-info">
+								<label for="scenic">Scenic</label><br>
+
+								<input class="checkbox-label" type="checkbox" id="marked" value="marked" name="additional-info">
+								<label for="marked">Well Marked</label><br>
+
+								<input class="checkbox-label" type="checkbox" id="season" value="season" name="additional-info">
+								<label for="season">All-Season</label><br>
+
+								<input type="checkbox" id="ferrata" value="ferrata" name="additional-info">
+								<label for="ferrata">Via Ferrata</label>
+							</div>
+						</div>
+						
+						<div class="submit-btn">
+							<button type="submit"><span>🏔️</span>LET'S HIKE!<span>🏔️</span></button>
+						</div>
+					</div>
+				</form>
+			</section>
 		</main>
 
 
