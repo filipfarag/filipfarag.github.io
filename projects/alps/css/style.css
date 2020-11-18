@@ -295,8 +295,12 @@ h2 {
     padding-top: 170px;
 }
 
-.region-berchtesgaden {
+.region-berchtesgaden,
+.region-dolomites,
+.region-dachstein,
+.region-valais {
     background: url('../img/bg-berchtesgaden.jpg') no-repeat center / 200px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.23), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 .region-dolomites {
@@ -397,6 +401,7 @@ h3 {
     text-align: center;
     font-size: 1.5rem;
     color: var(--grey);
+    line-height: 1.3;
 }
 
 .region-title video {
@@ -470,6 +475,7 @@ img[src*="dolomites-7"] {
     padding: 20px;
     border-radius: 10px;
     margin: 30px 5px 0;
+    box-shadow: 0 19px 38px rgba(255, 29, 29, 0.2), 0 15px 12px rgba(255, 56, 56, 0.12);
 }
 
 .eiskapelle-warning p {
@@ -479,6 +485,7 @@ img[src*="dolomites-7"] {
 .eiskapelle-warning i {
     margin-left: 50px;
     font-size: 1.6rem;
+    color: rgb(255, 217, 217);
 }
 
 .eiskapelle-warning p:nth-child(1) {
@@ -549,44 +556,71 @@ img[src*="dolomites-6"] {
 .alpine-kings {
     background-color: var(--grey-light);
     color: var(--grey);
-    font-size: 1.3rem;
     padding: 100px 0;
+    overflow-x:auto;
 }
 
 .alpine-kings div {
     width: 730px;
     max-width: 90%;
     text-align: center;
-    margin: 0 auto 50px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.alpine-kings .fa-crown {
+    font-size: 2.5rem;
+    color: var(--orange-light);
 }
 
 .alpine-kings h3 {
     display: inline-block;
     border: none;
+    margin-top: 20px;
+}
+
+.alpine-kings-note {
+    margin: 0px;
+    color: var(--grey-dark);
+    font-family: "Josefin Bold", sans-serif;
+    opacity: 0;
+}
+
+.alpine-kings .fa-long-arrow-alt-right {
+    margin: 0 10px;
+    color: var(--orange-dark);
 }
 
 .alpine-kings table {
-    width: 1000px;
+    width: 750px;
     text-align: center;
     margin: 0 auto;
     border-spacing: 0px;
     border-collapse: collapse;
-
 }
 
 .alpine-kings thead {
     color: var(--grey-dark);
     font-family: "Josefin Bold", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+.alpine-kings tbody {
+    font-size: 1rem;
+}
+
+.alpine-kings-flag {
+    font-size: 1.4rem;
+}
+
+
 .alpine-kings tr {
-    border-bottom: 2px solid var(--orange-light);
+    border-bottom: 1px solid var(--orange-light);
 }
 
 .alpine-kings th,
 .alpine-kings td {
-    padding: 20px
+    padding: 10px
 }
 
 
@@ -757,6 +791,11 @@ img[src*="dolomites-6"] {
     .spot-detail-6 {
         margin: 50px 0 0 0px;
     }
+
+    .alpine-kings-note {
+        margin: 50px 0 30px;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 620px) {
@@ -869,6 +908,30 @@ img[src*="dolomites-6"] {
         top: 95%;
     }
 
+    .alpine-kings div {
+        font-size: 1.1rem;
+    }
+        
+    .alpine-kings table {
+        width: 500px;    
+    }
+    
+    .alpine-kings thead {
+        font-size: 1rem;
+    }
+    
+    .alpine-kings tbody {
+        font-size: .8rem;
+    }
+    
+    .alpine-kings-flag {
+        font-size: 1.1rem;
+    }
+    
+    .alpine-kings th,
+    .alpine-kings td {
+        padding: 5px
+    }
 }
 
 
