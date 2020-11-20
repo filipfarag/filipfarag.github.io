@@ -298,7 +298,7 @@ h2 {
 
 .all-regions div p {
     width: 200px;
-    height: 288px;
+    height: 286px;
     padding-top: 170px;
 }
 
@@ -960,14 +960,14 @@ img[src*="dolomites-6"] {
     .all-regions {
         background: url('../img/vrstevnice.png') repeat-x top / 200px;
         grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(2, 217px);
+        grid-template-rows: repeat(2, 215px);
         margin: 150px 0 200px;
         grid-gap: 15px;
     }
     
     .all-regions div p {
         width: 150px;
-        height: 217px;
+        height: 215px;
         padding-top: 120px;
         font-size: .8rem;
     }
