@@ -417,6 +417,10 @@ footer svg:hover {
     .project-options a:hover .view-icon {
         opacity: 0;
     }
+
+    .project-options {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 430px) {
