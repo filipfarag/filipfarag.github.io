@@ -134,6 +134,11 @@ h2 {
     line-height: 1.4;
 }
 
+.link-in-desc {
+    text-decoration: underline;
+    color: #141c3a;
+}
+
 .project-options {
     display: flex;
     justify-content: space-between;
@@ -213,7 +218,11 @@ h3 {
     justify-content: center;
 }
 
-
+tt {
+    font-size: 1.2rem;
+    color: #141c3a;
+    background-color: rgb(193, 221, 186);
+}
 
 
 
@@ -310,13 +319,13 @@ footer svg:hover {
 @font-face {
     font-family: "Rubik Regular";
     src: url('../fonts/Rubik/Rubik-Regular.ttf') format('truetype');
-    font-weight: regular;
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Rubik Light";
     src: url('../fonts/Rubik/Rubik-Light.ttf') format('truetype');
-    font-weight: light;
+    font-weight: lighter;
 }
 
 @font-face {
