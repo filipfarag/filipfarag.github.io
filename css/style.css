@@ -45,18 +45,26 @@ h3,
 
 
 /*––––––––––––––––––––HEADER––––––––––––––––––––*/
-.filipfarag {
+h1 {
     font-family: "ReenieBeanie", serif;
     font-size: 4rem;
     color: var(--grey-light);
+    animation: from-up 800ms cubic-bezier(0.6, 1.5, 0.6, 0.9) 0ms;
+
 }
 
-h1 {
+h2 {
     font-family: "Rubik Bold", serif;
     letter-spacing: -1px;
     color: var(--grey-dark);
     font-size: 3rem;
     margin-bottom: 24px;
+}
+
+header h2,
+.header-subtitle-big {
+    animation: zero-opacity 800ms ease-in 0ms;
+
 }
 
 .header-subtitle-big {
@@ -85,21 +93,29 @@ header img {
     margin-top: 50px;
 }
 
+header img[alt*="coding"],
+header img[alt*="messing"],
+header img[alt*="calculating"] {
+    animation-name: middle-img;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0.6, 1.5, 0.6, 1.2);
+    transform: scale(0);
+    animation-fill-mode: forwards;
+}
+
 header img[alt*="coding"] {
-    animation: middle-img 300ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
+    animation-delay: 0ms;
 }
 
 header img[alt*="messing"] {
     margin-left: 40px;
     margin-right: 40px;
-    animation: middle-img 500ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
+    animation-delay: 150ms;
 }
 
 header img[alt*="calculating"] {
-    animation: middle-img 700ms cubic-bezier(0.6, 1.5, 0.6, 1.2);
+    animation-delay: 300ms;
 }
-
-
 
 
 
@@ -119,10 +135,7 @@ header img[alt*="calculating"] {
     margin-bottom: 100px;
 }
 
-h2 {
-    font-family: "Rubik Bold", serif;
-    letter-spacing: -1px;
-    color: var(--grey-dark);
+.projects-intro h2 {
     font-size: 2rem;
     margin-bottom: 16px;
 }
@@ -285,13 +298,23 @@ footer svg:hover {
 /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 /*––––––––––––––––––KEYFRAMES––––––––––––––––––*/
-@keyframes left-img {
+@keyframes from-up {
     0% {
-        transform: scale(0);
+        transform: translateY(-300%);
     }
 
     100% {
-        transform: scale(1);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes zero-opacity {
+    0% {
+        opacity: 0;;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
