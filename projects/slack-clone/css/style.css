@@ -48,8 +48,7 @@ h5 {
 
 /*––––––––––––––––––––HEADER––––––––––––––––––––*/
 header nav,
-.secondary-header
-.welcome-1,
+.secondary-header,
 .footer-primary,
 .footer-secondary,
 .footer-tertiary {
@@ -57,8 +56,18 @@ header nav,
     max-width: 90%;
 }
 
-nav img {
-    width: 100px;
+header {
+    padding-top: 72px;
+}
+
+.nav-bg {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 12px 19px -6px rgba(0,0,0,0.15);
 }
 
 header nav {
@@ -67,6 +76,10 @@ header nav {
     flex-direction: column;
     justify-content: center;
     padding: 15px 0;
+}
+
+nav img {
+    width: 100px;
 }
 
 header ul {
@@ -611,6 +624,14 @@ footer img {
 
 
 @media (max-width: 1070px) {
+
+    header {
+        padding-top: 0;
+    }
+
+    .nav-bg {
+        position: initial;
+    }
 
     header nav {
         font-size: 1.3rem;
