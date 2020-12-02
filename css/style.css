@@ -74,8 +74,8 @@ header h2,
 }
 
 header {
-    height: 700px;
-    padding: 25px;
+    height: 600px;
+    padding: 0px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,9 +120,18 @@ header img[alt*="calculating"] {
 
 
 /*––––––––––––––––––––MAIN - PROJECTS––––––––––––––––––––*/
+
+.wave {
+    display: block;
+}
+
+.wave-end {
+    transform: rotate(180deg);
+}
+
 .projects {
     text-align: center;
-    background-color: #dfdfdf86;
+    background-color: #eeeeee;
     padding: 100px 0;
     
 }
