@@ -318,12 +318,13 @@ h2 {
 
 .customer-quote {
     width: 620px;
-    max-width: 100%;
+    padding-left: 65px;
 }
 
 .customer-quote q {
     font-size: 1.75rem;
     font-family: "Larsseit Thin Italic", sans-serif;
+    font-style: italic;
     letter-spacing: -0.3px;
     line-height: 38px;
 }
